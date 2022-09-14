@@ -12,7 +12,7 @@ int main(void)
 	unsigned long second = 1;
 	unsigned long fib;
 
-	for (count = 0; count < 97; count++)
+	for (count = 0; count < 94; count++)
 	{
 		fib = first + second;
 		printf("%lu, ", fib);
