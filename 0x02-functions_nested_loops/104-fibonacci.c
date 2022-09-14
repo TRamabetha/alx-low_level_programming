@@ -7,6 +7,7 @@
  */
 int main(void)
 {
+	int count;
 	unsigned long first = 0;
 	unsigned long second = 1;
 	unsigned long fib;
