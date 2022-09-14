@@ -7,18 +7,16 @@
  */
 int main(void)
 {
-	int counter = 0;
 	unsigned long first = 0;
 	unsigned long second = 1;
 	unsigned long fib;
 
-	while (counter <= 97)
+	for (count = 0; count < 97; count++)
 	{
 		fib = first + second;
 		printf("%lu, ", fib);
 		first = second;
 		second = fib;
-		counter++;
 	}
 	printf("\n");
 	return (0);
