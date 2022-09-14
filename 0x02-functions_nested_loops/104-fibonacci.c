@@ -15,14 +15,7 @@ int main(void)
 	while (counter <= 97)
 	{
 		fib = first + second;
-		if (counter < 97)
-		{
-			printf("%lu, ", fib);
-		}
-		else
-		{
-			printf("%lu", fib);
-		}
+		printf("%lu, ", fib);
 		first = second;
 		second = fib;
 		counter++;
