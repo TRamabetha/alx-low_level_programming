@@ -8,16 +8,15 @@
 * Return: nothing
 */
 
-void rev_string(char string)
+void rev_string(char *s)
 {
- 	char temp;
-  	int i,length;
-   	length=strlen(string)-1;
+  	int i,len,temp;
+   	len = strlen(s);
    	
-	for(i=0;i<strlen(string)/2;i++){
-     		temp=string[i];
-      		string[i]=string[length];
-      		string[length--]=temp;
+	for(i=0;i<len/2;i++){
+     		temp=s[i];
+      		s[i]=s[len - i - 1];
+      		s[len - i - 1]=temp;
    	}
  	
 }
