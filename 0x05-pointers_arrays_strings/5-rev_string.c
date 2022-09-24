@@ -8,31 +8,17 @@
 * Return: nothing
 */
 
-void rev_string(char *s)
+void rev_string(char string)
 {
-	int i, tmp, len = _strlen(s);
-
-	int i, tmp, len = _strlen(s);
-	{
-		tmp = *(s + i);
-		*(s + i) = *(s + len - i - 1);
-		*(s + len - i - 1) = tmp;
-	}
+ 	char temp;
+  	int i,length;
+   	length=strlen(string)-1;
+   	
+	for(i=0;i<strlen(string)/2;i++){
+     		temp=string[i];
+      		string[i]=string[length];
+      		string[length--]=temp;
+   	}
+ 	
 }
 
-/**
-* _strlen - returns the length of a string
-* @s: string
-*
-* Return: the length of the given string
-*/
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*(s + len) != '\0')
-		len++;
-
-	return (len);
-}
