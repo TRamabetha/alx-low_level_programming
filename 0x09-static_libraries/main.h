@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #ifndef FILE_HOLBERTON
 #define FILE_HOLBERTON
+=======
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
+>>>>>>> e4190c280c4c4ae96eab197fa324d8f27d9f1da5
 
 int _putchar(char c);
 int _islower(int c);
