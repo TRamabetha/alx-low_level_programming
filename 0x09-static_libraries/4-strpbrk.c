@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _strpbrk - bytes
+ * @s: pointer to char
+ * @accept: pointer to char
+ * Return: NULL
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	int i;
+
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				return (s);
+			}
+		}
+		s++;
+	}
+	return (NULL);
+=======
 #include "main.h"
 
 /**
@@ -20,4 +48,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 	return ('\0');
+>>>>>>> e4190c280c4c4ae96eab197fa324d8f27d9f1da5
 }
