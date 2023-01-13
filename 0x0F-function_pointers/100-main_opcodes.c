@@ -14,7 +14,7 @@ int i;
 
 for (i = 0; i < n; i++)
 {
-printf("%.2x", (unsigned char)main_func[i]);
+printf("%.2x", (unsigned char)(*a));
 }
 printf("\n");
 
