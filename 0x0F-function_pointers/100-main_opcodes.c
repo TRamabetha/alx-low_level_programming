@@ -29,7 +29,7 @@ printf("\n");
  */
 int main(int argc, char **argv)
 {
-int a;
+int num_bytes;
 
 if (argc != 2)
 {
