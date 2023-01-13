@@ -14,7 +14,8 @@ int i;
 if (array == NULL || action == NULL)
 return;
 
-for (size_t i = 0; i < size; i++) {
+for (size_t i = 0; i < size; i++) 
+	
         (*action)(array[i]);
     }
 }
