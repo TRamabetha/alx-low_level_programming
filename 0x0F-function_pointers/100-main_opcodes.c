@@ -14,7 +14,9 @@ int i;
 
 for (i = 0; i < n; i++)
 {
-printf("%.2x", (unsigned char)(*a));
+printf("%.2hhx", a[i]);
+if (i < n - 1)
+printf(" ");
 }
 printf("\n");
 
@@ -29,7 +31,7 @@ printf("\n");
  */
 int main(int argc, char **argv)
 {
-int num_bytes;
+int a;
 
 if (argc != 2)
 {
