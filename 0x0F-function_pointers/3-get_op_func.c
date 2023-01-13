@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
 
 int (*get_op_func(char *s))(int, int) {
     op_t ops[] = {
