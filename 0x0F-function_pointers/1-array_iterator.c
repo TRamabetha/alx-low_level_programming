@@ -15,6 +15,6 @@ return;
 
 for (int i = 0; i < (int) size; i++)
 {
-(*action)(array[i]);
+action(array[i]);
 }
 }
