@@ -31,19 +31,19 @@ printf("\n");
  */
 int main(int argc, char **argv)
 {
-int num_bytes;
+int a;
 
 if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
-num_bytes = atoi(argv[1]);
-if (num_bytes < 0) 
+a = atoi(argv[1]);
+if (a < 0)
 {
 printf("Error\n");
 exit(2);
 }
-print_opcodes((char *)&main, num_bytes);
+print_opcodes((char *)&main, a);
 return (0);
 }
